@@ -1,73 +1,130 @@
 <!DOCTYPE html>
 <html lang="es">
 <head>
-  <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1.0">
-  <title>Documentacion Tecnica</title>
-  <link rel="stylesheet" href="styles.css">
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>Documentación Técnica</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css">
 </head>
 <body>
-
-  <nav id="navbar">
-    <header>Documentacion Tecnica</header>
-    <a class="nav-link" href="#Introduccion">Introduccion</a>
-    <a class="nav-link" href="#Instalacion">Instalacion</a>
-    <a class="nav-link" href="#Sintaxis_Basica">Sintaxis Basica</a>
-    <a class="nav-link" href="#Tipos_de_Datos">Tipos de Datos</a>
-    <a class="nav-link" href="#Estructuras_de_Control">Estructuras de Control</a>
-  </nav>
-
-  <main id="main-doc">
-    <section class="main-section" id="Introduccion">
-      <header>Introduccion</header>
-      <p>Esta documentación tecnica proporciona una guia completa sobre los fundamentos de la programacion.</p>
-      <p>Aprenderas los conceptos basicos y avanzados a lo largo de esta documentacion.</p>
-    </section>
-
-    <section class="main-section" id="Instalacion">
-      <header>Instalacion</header>
-      <p>Para comenzar a programar, primero necesitas instalar un editor de texto como <code>VSCode</code> o <code>Sublime Text</code>.</p>
-      <ul>
-        <li>Descarga el editor de tu eleccion</li>
-        <li>Sigue las instrucciones de instalacion</li>
-        <li>Configura el entorno de acuerdo a tus necesidades</li>
-      </ul>
-      <p>Tambien se recomienda instalar herramientas adicionales como <code>Node.js</code> y <code>Git</code> para un flujo de trabajo eficiente.</p>
-    </section>
-
-    <section class="main-section" id="Sintaxis_Basica">
-      <header>Sintaxis Basica</header>
-      <p>La sintaxis basica es esencial para escribir codigo legible y funcional.</p>
-      <p>Ejemplo de declaracion de una variable en JavaScript:</p>
-      <code>let nombre = "Juan";</code>
-      <p>Usar comentarios es importante para documentar el codigo:</p>
-      <code>// Este es un comentario</code>
-    </section>
-
-    <section class="main-section" id="Tipos_de_Datos">
-      <header>Tipos de Datos</header>
-      <p>Los tipos de datos determinan el tipo de valores que se pueden almacenar y manipular.</p>
-      <ul>
-        <li><code>String</code>: Cadenas de texto</li>
-        <li><code>Number</code>: Números</li>
-        <li><code>Boolean</code>: Valores verdadero/falso</li>
-      </ul>
-      <p>Ejemplo de uso de un tipo de dato booleano:</p>
-      <code>let esVerdad = true;</code>
-    </section>
-
-    <section class="main-section" id="Estructuras_de_Control">
-      <header>Estructuras de Control</header>
-      <p>Las estructuras de control son esenciales para gestionar el flujo del programa.</p>
-      <p>Ejemplo de una estructura de control condicional:</p>
-      <code>if (x > 10) { console.log("x es mayor que 10"); }</code>
-      <ul>
-        <li>Condicionales: <code>if</code>, <code>else</code>, <code>switch</code>.</li>
-        <li>Ciclos: <code>for</code>, <code>while</code>, <code>do while</code>.</li>
-      </ul>
-      <p>Con el uso de estas estructuras, se puede controlar el flujo de ejecución del código</p>
-    </section>
-  </main>
-
+ 
+<nav id="navbar">
+  <header>DevDocs</header>
+  <div class="nav-sub">Guía de referencia</div>
+  <input id="nav-search" type="text" placeholder="Buscar sección...">
+  <div class="nav-links" id="nav-links">
+    <a class="nav-link" href="#Introduccion" data-label="introduccion">Introducción</a>
+    <a class="nav-link" href="#Instalacion" data-label="instalacion">Instalación</a>
+    <a class="nav-link" href="#Sintaxis_Basica" data-label="sintaxis basica">Sintaxis Básica</a>
+    <a class="nav-link" href="#Tipos_de_Datos" data-label="tipos de datos">Tipos de Datos</a>
+    <a class="nav-link" href="#Estructuras_de_Control" data-label="estructuras de control">Estructuras de Control</a>
+  </div>
+  <div class="nav-footer">v1.0 · Actualizado 2026</div>
+</nav>
+ 
+<main id="main-doc">
+  <div class="doc-hero">
+    <div class="eyebrow">Referencia técnica</div>
+    <h1>Fundamentos de Programación</h1>
+    <p>Guía completa para aprender los conceptos básicos y avanzados del desarrollo de software, desde la instalación de herramientas hasta el control de flujo.</p>
+  </div>
+ 
+  <section class="main-section" id="Introduccion">
+    <header><span class="idx">01</span>Introducción</header>
+    <p>Esta documentación técnica proporciona una guía completa sobre los fundamentos de la programación.</p>
+    <p>Aprenderás los conceptos básicos y avanzados a lo largo de esta documentación, con ejemplos prácticos en cada sección.</p>
+  </section>
+ 
+  <section class="main-section" id="Instalacion">
+    <header><span class="idx">02</span>Instalación</header>
+    <p>Para comenzar a programar, primero necesitas instalar un editor de texto como <code>VSCode</code> o <code>Sublime Text</code>.</p>
+    <ul>
+      <li>Descarga el editor de tu elección</li>
+      <li>Sigue las instrucciones de instalación</li>
+      <li>Configura el entorno de acuerdo a tus necesidades</li>
+    </ul>
+    <p>También se recomienda instalar herramientas adicionales como <code>Node.js</code> y <code>Git</code> para un flujo de trabajo eficiente.</p>
+  </section>
+ 
+  <section class="main-section" id="Sintaxis_Basica">
+    <header><span class="idx">03</span>Sintaxis Básica</header>
+    <p>La sintaxis básica es esencial para escribir código legible y funcional. Ejemplo de declaración de una variable:</p>
+    <div class="code-block">
+      <div class="cb-head"><span>javascript</span><button class="copy-btn">Copiar</button></div>
+      <pre><span class="tok-kw">let</span> nombre = <span class="tok-str">"Juan"</span>;</pre>
+    </div>
+    <p>Usar comentarios es importante para documentar el código:</p>
+    <div class="code-block">
+      <div class="cb-head"><span>javascript</span><button class="copy-btn">Copiar</button></div>
+      <pre><span class="tok-com">// Este es un comentario</span></pre>
+    </div>
+  </section>
+ 
+  <section class="main-section" id="Tipos_de_Datos">
+    <header><span class="idx">04</span>Tipos de Datos</header>
+    <p>Los tipos de datos determinan el tipo de valores que se pueden almacenar y manipular.</p>
+    <ul>
+      <li><code>String</code>: cadenas de texto</li>
+      <li><code>Number</code>: números</li>
+      <li><code>Boolean</code>: valores verdadero/falso</li>
+    </ul>
+    <p>Ejemplo de uso de un tipo de dato booleano:</p>
+    <div class="code-block">
+      <div class="cb-head"><span>javascript</span><button class="copy-btn">Copiar</button></div>
+      <pre><span class="tok-kw">let</span> esVerdad = <span class="tok-kw">true</span>;</pre>
+    </div>
+  </section>
+ 
+  <section class="main-section" id="Estructuras_de_Control">
+    <header><span class="idx">05</span>Estructuras de Control</header>
+    <p>Las estructuras de control son esenciales para gestionar el flujo del programa. Ejemplo de una estructura condicional:</p>
+    <div class="code-block">
+      <div class="cb-head"><span>javascript</span><button class="copy-btn">Copiar</button></div>
+      <pre><span class="tok-kw">if</span> (x > <span class="tok-str">10</span>) { console.log(<span class="tok-str">"x es mayor que 10"</span>); }</pre>
+    </div>
+    <ul>
+      <li>Condicionales: <code>if</code>, <code>else</code>, <code>switch</code></li>
+      <li>Ciclos: <code>for</code>, <code>while</code>, <code>do while</code></li>
+    </ul>
+    <p>Con el uso de estas estructuras, se puede controlar el flujo de ejecución del código.</p>
+  </section>
+</main>
+ 
+<script>
+// Scroll-spy: resalta el link activo según la sección visible
+const links = document.querySelectorAll(".nav-link");
+const sections = document.querySelectorAll(".main-section");
+const observer = new IntersectionObserver((entries) => {
+  entries.forEach(entry => {
+    if (entry.isIntersecting) {
+      links.forEach(l => l.classList.remove("active"));
+      const active = document.querySelector(`.nav-link[href="#${entry.target.id}"]`);
+      if (active) active.classList.add("active");
+    }
+  });
+}, { rootMargin: "-20% 0px -70% 0px" });
+sections.forEach(s => observer.observe(s));
+ 
+// Filtro de búsqueda en el sidebar
+document.getElementById("nav-search").addEventListener("input", (e) => {
+  const q = e.target.value.toLowerCase();
+  links.forEach(link => {
+    link.style.display = link.dataset.label.includes(q) ? "block" : "none";
+  });
+});
+ 
+// Copiar código al portapapeles
+document.querySelectorAll(".copy-btn").forEach(btn => {
+  btn.addEventListener("click", () => {
+    const code = btn.closest(".code-block").querySelector("pre").innerText;
+    navigator.clipboard.writeText(code);
+    const original = btn.textContent;
+    btn.textContent = "¡Copiado!";
+    setTimeout(() => btn.textContent = original, 1200);
+  });
+});
+</script>
 </body>
 </html>
